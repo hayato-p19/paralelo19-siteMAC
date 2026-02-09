@@ -1288,17 +1288,21 @@ input, select, textarea {
 			}
 
 		#header .logo {
-			width: 5.5rem;
-			height: 5.5rem;
-			line-height: 5.5rem;
-			border: solid 1px #ffffff;
-			border-radius: 100%;
-		}
+    width: 5.5rem;
+    height: 5.5rem;
+    border: solid 1px #ffffff;
+    border-radius: 100%;
 
-			#header .logo .icon:before {
-				font-size: 2rem;
-			}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#header .logo img {
+    width: 80%;
+    height: auto;
+    display: block;
+}
 		#header .content {
 			border-style: solid;
 			border-color: #ffffff;
@@ -1354,15 +1358,21 @@ input, select, textarea {
 				}
 
 				#header nav ul li a {
-					display: block;
-					min-width: 7.5rem;
-					height: 2.75rem;
-					line-height: 2.75rem;
-					padding: 0 1.25rem 0 1.45rem;
-					text-transform: uppercase;
-					letter-spacing: 0.2rem;
-					font-size: 0.8rem;
-					border-bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;        /* centraliza verticalmente */
+  justify-content: center;    /* centraliza horizontalmente */
+  height: 2.75em;             /* mantém o retângulo */
+  padding: 0 1.25em;
+  text-align: center;
+  line-height: 1.2;           /* permite duas linhas */
+  white-space: normal;        /* libera quebra de linha */
+}
+
+
+ 
+				}
+
 				}
 
 					#header nav ul li a:hover {
@@ -1656,3 +1666,30 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+/* --- OVERRIDE: menu do header em 2 linhas, caixas iguais e texto centralizado --- */
+#header nav ul {
+  display: flex !important;
+  width: 100% !important;
+}
+
+#header nav ul li {
+  flex: 1 1 0 !important;   /* todas as caixas com a mesma largura */
+  min-width: 0 !important;  /* impede “esticar” por texto longo */
+  display: flex !important;
+}
+
+#header nav ul li a {
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;      /* centralização vertical */
+  justify-content: center !important;  /* centralização horizontal */
+  text-align: center !important;
+
+  /* mantém 2 linhas */
+  white-space: normal !important;
+  line-height: 1.15 !important;
+
+  /* NÃO mexe na altura se já está ok:
+     se precisar, ajuste só aqui (ex.: 3.8em) */
+  /* height: 3.8em !important; */
+}
