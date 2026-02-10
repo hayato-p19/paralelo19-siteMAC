@@ -1155,7 +1155,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/front.JPG");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1287,15 +1287,15 @@ input, select, textarea {
 				display: none;
 			}
 
-		#header .logo {
-    width: 5.5rem;
-    height: 5.5rem;
-    border: solid 1px #ffffff;
-    border-radius: 100%;
+	#header .logo {
+  width: 5.5rem;
+  height: 5.5rem;
+  border: solid 1px #ffffff;
+  border-radius: 100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #header .logo img {
@@ -1693,3 +1693,36 @@ input, select, textarea {
      se precisar, ajuste só aqui (ex.: 3.8em) */
   /* height: 3.8em !important; */
 }
+/* --- LOGO: círculo + SVG centralizado e contido --- */
+#header .logo {
+  width: 5.5rem;
+  height: 5.5rem;
+  border: solid 1px #ffffff;
+  border-radius: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;           /* impede o SVG de “vazar” e sumir a borda */
+  box-sizing: border-box;     /* garante que a borda não altere o tamanho */
+}
+
+#header .logo img {
+  width: 70%;
+  height: 70%;
+  display: block;
+  object-fit: contain;
+}
+#intro p {
+  text-align: justify;
+  hyphens: auto;
+}
+/* Justificar todos os textos (todas as seções) */
+article p,
+#header p,
+#footer p {
+  text-align: justify !important;
+  hyphens: auto;
+}
+
