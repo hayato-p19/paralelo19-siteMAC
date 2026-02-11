@@ -1725,4 +1725,13 @@ article p,
   text-align: justify !important;
   hyphens: auto;
 }
+#footer {
+    text-align: center;
+}
+
+#footer p,
+#footer .copyright {
+    text-align: center;
+}
+
 
