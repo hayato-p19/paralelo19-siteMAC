@@ -116,35 +116,50 @@
 						  
 
 						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="https://formspree.io/f/xvzbzkvy">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
+						<article id="contact">
+							<h2 class="major">Contato</h2>
+						  
+							<p>
+							  Para informações técnicas, propostas ou parcerias institucionais:
+							  <br />
+							  <strong>
+								<a href="mailto:contato@paralelo19.co">
+								  contato@paralelo19.co
+								</a>
+							  </strong>
+							</p>
+						  
+							<form method="POST" action="https://formspree.io/f/xvzbzkvy">
+							  <div class="fields">
+								<div class="field half">
+								  <label for="name">Nome</label>
+								  <input type="text" name="name" id="name" required />
+								</div>
+						  
+								<div class="field half">
+								  <label for="email">E-mail</label>
+								  <input type="email" name="email" id="email" required />
+								</div>
+						  
+								<div class="field">
+								  <label for="message">Mensagem</label>
+								  <textarea name="message" id="message" rows="4" required></textarea>
+								</div>
+							  </div>
+						  
+							  <!-- Assunto fixo do e-mail -->
+							  <input type="hidden" name="_subject" value="Contato via site paralelo19.co" />
+						  
+							  <!-- Anti-spam simples -->
+							  <input type="text" name="_gotcha" style="display:none" />
+						  
+							  <ul class="actions">
+								<li><input type="submit" value="Enviar mensagem" class="primary" /></li>
+								<li><input type="reset" value="Limpar" /></li>
+							  </ul>
+							</form>
+						  </article>
+						  
 
 						<!-- Elements -->
 							<article id="elements">
