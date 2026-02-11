@@ -1760,10 +1760,5 @@ article p,
   position: fixed;      /* se isso atrapalhar, troque por: position: absolute; */
   bottom: 0;
 }
-/* Corrigir alinhamento do rodapé */
-#footer p,
-#footer .copyright {
-    text-align: center !important;
-}
 
 
