@@ -1733,32 +1733,5 @@ article p,
 #footer .copyright {
     text-align: center;
 }
-/* Force footer to span full width and center content */
-#footer{
-  left: 0 !important;
-  right: 0 !important;
-  width: 100% !important;
-  text-align: center !important;
-}
-
-#footer > *{
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-/* Template commonly uses .copyright */
-#footer .copyright,
-#footer p,
-#footer small{
-  width: 100% !important;
-  text-align: center !important;
-  display: block !important;
-}
-
-/* If footer is positioned */
-#footer{
-  position: fixed;      /* se isso atrapalhar, troque por: position: absolute; */
-  bottom: 0;
-}
 
 
